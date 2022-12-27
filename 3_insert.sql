@@ -108,10 +108,6 @@ VALUES  ('GRAND PRIME','1'),
         ('G PURE','2');
 
 
-
-
-
-
 INSERT INTO equipos(imei, falla, observaciones_de_recepcion, observaciones_de_entrega, compania_id, modelo_id)
 VALUES  ('152485785236985','No carga','Sin chip','Garantía 1 mes','1','5'),
         ('','Estrellado','Sin chip, sin memoria','Garantía 1 mes','1','3'),
@@ -133,6 +129,7 @@ VALUES  ('152485785236985','No carga','Sin chip','Garantía 1 mes','1','5'),
         ('350164374466191', 'Red bloqueada', 'Sin chip, sin memoria', 'Garantía 15 días', '3', '9'),
         ('', 'Estrellado', 'Sin chip, sin memoria','Garantía 15 días', '1', '15'),
         ('356212332053777', 'Estrellado', 'sin chip', 'Garantia 15 días', '1', '17');
+
 
 INSERT INTO equipos_servicios(equipo_id, servicio_id)
 VALUES  ('1','3'),
@@ -159,10 +156,6 @@ VALUES  ('1','3'),
         ('20','11');
 
 
-
-
-
-
 INSERT INTO folios(total, anticipo, resto_pendiente, fecha_cierre, total_cobrado, cliente_id, equipo_id)
 VALUES  (250, 0, 250, '2022-01-01', 250, '1', '7'),
         (380, 0, 380, '2022-02-02', 0, '2', '6'),
@@ -185,7 +178,3 @@ VALUES  (250, 0, 250, '2022-01-01', 250, '1', '7'),
         (120, 0 , 120, '2022-11-22', 120, '17', '16'),
         (1100, 500, 600, '2022-10-29', 1100, '3', '19'),
         (2600, 1000, 1600, '2022-10-30', 2600, '4', '18');
-
-
-
-

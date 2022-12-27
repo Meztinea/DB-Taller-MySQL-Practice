@@ -47,7 +47,6 @@ INNER JOIN equipos_servicios ON equipos.id_equipo = equipos_servicios.equipo_id
 INNER JOIN servicios ON equipos_servicios.servicio_id = servicios.id_servicio\G;
 
 
-
 -- Vista que muestra la marca, modelo, falla y servicio de cada folio
 CREATE OR REPLACE VIEW equipos_servicios_vw AS
 SELECT 
@@ -61,4 +60,3 @@ INNER JOIN modelos ON equipos.modelo_id = modelos.id_modelo
 INNER JOIN marcas ON modelos.marca_id = marcas.id_marca
 INNER JOIN equipos_servicios ON equipos.id_equipo = equipos_servicios.equipo_id
 INNER JOIN servicios ON equipos_servicios.servicio_id = servicios.id_servicio;
-

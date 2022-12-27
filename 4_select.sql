@@ -1,6 +1,5 @@
 -- @Meztinea
 
-
 -- Buscándo clientes de apellido Sánchez
 SELECT nombre AS Nombre, apellido_p AS Apellido_Paterno FROM clientes WHERE apellido_p = 'Sánchez';
 
@@ -49,8 +48,5 @@ SELECT UPPER(CONCAT(nombre, ' ', apellido_p, ' ', apellido_m)) AS Nombre_complet
 -- Imprimir si el celular se reparó o no y cuanto se cobró
 SELECT IF( total_cobrado != 0, CONCAT('El celular sí se reparó: Total cobrado ', total_cobrado), 'El celular no se reparó') FROM folios;
 
-
 -- Imprimir si el cliente tiene registrado su telefono o no 
 SELECT IFNULL(telefono, 'El cliente no cuenta con teléfono') FROM clientes;
-
-

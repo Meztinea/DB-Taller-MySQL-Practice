@@ -8,7 +8,6 @@ FROM modelos
 INNER JOIN marcas ON modelos.marca_id = marcas.id_marca;
 
 
-
 -- Traer la marca, modelo y compañia de cada equipo (join 4 tablas)
 SELECT 
     CONCAT(marcas.marca, ' ', modelos.modelo) AS 'Marca - Modelo' ,
@@ -17,7 +16,6 @@ FROM equipos
 INNER JOIN modelos ON equipos.modelo_id = modelos.id_modelo
 INNER JOIN marcas ON modelos.marca_id = marcas.id_marca
 INNER JOIN companias ON equipos.compania_id = companias.id_compania;
-
 
 
 -- Traer los equipos de cada cliente, las fechas en las que ingresaron y salieron (join 6 tablas)
@@ -33,7 +31,6 @@ INNER JOIN equipos ON folios.equipo_id = equipos.id_equipo
 INNER JOIN modelos ON equipos.modelo_id = modelos.id_modelo
 INNER JOIN marcas ON modelos.marca_id = marcas.id_marca
 INNER JOIN companias ON equipos.compania_id = companias.id_compania;
-
 
 
 -- Traer todos los datos de una nota dependiendo del id del folio (join 8 tablas)

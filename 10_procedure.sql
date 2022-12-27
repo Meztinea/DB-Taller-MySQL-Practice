@@ -1,5 +1,4 @@
--- Meztinea
-
+-- @Meztinea
 
 -- Mostrar las notas por cliente (todos los folios del mismo cliente)
 DELIMITER //
@@ -53,7 +52,6 @@ END//
 DELIMITER ;
 
 
-
 -- Nombre cliente (por id), marca, modelo, compañia, falla, servicio, fecha recp, fecha_entrega, días en reparación
 -- Procedure que hace llamado a una función 
 DELIMITER //
@@ -82,4 +80,3 @@ BEGIN
 END//
 
 DELIMITER ;
-

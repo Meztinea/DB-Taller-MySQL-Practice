@@ -27,13 +27,11 @@ CREATE TABLE IF NOT EXISTS marcas(
 ) ENGINE = InnoDB;
 
 
-
 CREATE TABLE IF NOT EXISTS servicios(
     id_servicio INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     servicio VARCHAR(45) NOT NULL,
     precio INTEGER NOT NULL
 ) ENGINE = InnoDB;
-
 
 
 CREATE TABLE IF NOT EXISTS modelos(
@@ -42,9 +40,6 @@ CREATE TABLE IF NOT EXISTS modelos(
     marca_id INTEGER UNSIGNED NOT NULL,
     FOREIGN KEY (marca_id) REFERENCES marcas(id_marca) ON DELETE CASCADE
 ) ENGINE = InnoDB;
-
-
-
 
 
 CREATE TABLE IF NOT EXISTS equipos(
@@ -58,9 +53,6 @@ CREATE TABLE IF NOT EXISTS equipos(
     FOREIGN KEY (compania_id) REFERENCES companias(id_compania) ON DELETE CASCADE,
     FOREIGN KEY (modelo_id) REFERENCES modelos(id_modelo) ON DELETE CASCADE 
 ) ENGINE = InnoDB;
-
-
-
 
 
 CREATE TABLE IF NOT EXISTS equipos_servicios(
@@ -85,7 +77,3 @@ CREATE TABLE IF NOT EXISTS folios(
     FOREIGN KEY (cliente_id) REFERENCES clientes(id_cliente) ON DELETE CASCADE,
     FOREIGN KEY (equipo_id) REFERENCES equipos(id_equipo) ON DELETE CASCADE
 ) ENGINE = InnoDB;
-
-
-
-

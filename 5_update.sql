@@ -13,7 +13,3 @@ WHERE nombre = 'Alanis Nadine' AND apellido_p  = 'Morissette';
 
 -- Actualizando garantía (Observacioens_entrega) a telefonos estrellados 
 UPDATE equipos SET observaciones_de_entrega = 'Garantía 15 días' WHERE falla = 'Estrellado';
-
-
-
-

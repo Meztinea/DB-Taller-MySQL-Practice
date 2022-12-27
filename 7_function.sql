@@ -1,9 +1,5 @@
 -- @Meztinea
 
-
-
--- Funciones
-
 -- Función que cuenta la cantidad de folios con el mismo cliente
 DELIMITER //
 
@@ -18,7 +14,6 @@ END//
 DELIMITER ;
 
 
-
 -- Función que actualiza la fecha de cierre de un folio con la fecha actual 
 DELIMITER //
 
@@ -29,7 +24,6 @@ BEGIN
     UPDATE folios SET fecha_cierre = CURDATE() WHERE id_folio = folio_id;
     RETURN 'Folio Cerrado';
 END//
-
 
 DELIMITER ;
     
@@ -45,6 +39,5 @@ BEGIN
     SET @cierre = (SELECT fecha_cierre FROM folios WHERE id_folio = folio_id);
     RETURN DATEDIFF(@cierre, @apertura);
 END//
-
 
 DELIMITER ;
