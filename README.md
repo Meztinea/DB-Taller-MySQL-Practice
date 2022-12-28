@@ -1,4 +1,4 @@
-# Base de datos Taller y comandos SQL
+# Base de datos Taller y comandos SQL :floppy_disk:
 
 ### Creación de base de datos de un establecimiento de reparación de equipos celulares y colección de comandos SQL para practicar:  
 
